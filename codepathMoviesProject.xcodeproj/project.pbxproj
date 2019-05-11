@@ -15,6 +15,12 @@
 		5916AC2522826FA7002AD13C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5916AC2322826FA7002AD13C /* LaunchScreen.storyboard */; };
 		5916AC3022826FA7002AD13C /* codepathMoviesProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5916AC2F22826FA7002AD13C /* codepathMoviesProjectTests.swift */; };
 		5916AC3B22826FA7002AD13C /* codepathMoviesProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5916AC3A22826FA7002AD13C /* codepathMoviesProjectUITests.swift */; };
+		CC0640372286951600E5D284 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0640362286951600E5D284 /* UIView+Layout.swift */; };
+		CC06403B2286959E00E5D284 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC06403A2286959E00E5D284 /* LoginController.swift */; };
+		CC06403D228695AE00E5D284 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC06403C228695AE00E5D284 /* SignupController.swift */; };
+		CC06403F228697DE00E5D284 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC06403E228697DE00E5D284 /* Extensions.swift */; };
+		CC06404122869A1200E5D284 /* LeftPaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC06404022869A1200E5D284 /* LeftPaddedTextField.swift */; };
+		CC0640452286FED700E5D284 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0640442286FED700E5D284 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		5916AC3622826FA7002AD13C /* codepathMoviesProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = codepathMoviesProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5916AC3A22826FA7002AD13C /* codepathMoviesProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codepathMoviesProjectUITests.swift; sourceTree = "<group>"; };
 		5916AC3C22826FA7002AD13C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC0640362286951600E5D284 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		CC06403A2286959E00E5D284 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		CC06403C228695AE00E5D284 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		CC06403E228697DE00E5D284 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CC06404022869A1200E5D284 /* LeftPaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftPaddedTextField.swift; sourceTree = "<group>"; };
+		CC0640442286FED700E5D284 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,8 @@
 		5916AC1622826FA6002AD13C /* codepathMoviesProject */ = {
 			isa = PBXGroup;
 			children = (
+				CC0640382286956300E5D284 /* Controller */,
+				CC064035228694E900E5D284 /* Helper */,
 				5916AC1722826FA6002AD13C /* AppDelegate.swift */,
 				5916AC1922826FA6002AD13C /* ViewController.swift */,
 				5916AC1B22826FA6002AD13C /* Main.storyboard */,
@@ -126,6 +140,26 @@
 				5916AC3C22826FA7002AD13C /* Info.plist */,
 			);
 			path = codepathMoviesProjectUITests;
+			sourceTree = "<group>";
+		};
+		CC064035228694E900E5D284 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CC0640362286951600E5D284 /* UIView+Layout.swift */,
+				CC0640442286FED700E5D284 /* Constants.swift */,
+				CC06403E228697DE00E5D284 /* Extensions.swift */,
+				CC06404022869A1200E5D284 /* LeftPaddedTextField.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CC0640382286956300E5D284 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC06403A2286959E00E5D284 /* LoginController.swift */,
+				CC06403C228695AE00E5D284 /* SignupController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +293,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0640372286951600E5D284 /* UIView+Layout.swift in Sources */,
 				5916AC2022826FA6002AD13C /* codepathMoviesProject.xcdatamodeld in Sources */,
+				CC06404122869A1200E5D284 /* LeftPaddedTextField.swift in Sources */,
 				5916AC1A22826FA6002AD13C /* ViewController.swift in Sources */,
+				CC06403D228695AE00E5D284 /* SignupController.swift in Sources */,
+				CC0640452286FED700E5D284 /* Constants.swift in Sources */,
 				5916AC1822826FA6002AD13C /* AppDelegate.swift in Sources */,
+				CC06403B2286959E00E5D284 /* LoginController.swift in Sources */,
+				CC06403F228697DE00E5D284 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,13 +477,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QW4ZBW5U8P;
+				DEVELOPMENT_TEAM = KCN7L56XZJ;
 				INFOPLIST_FILE = codepathMoviesProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SMM.codepathMoviesProject;
+				PRODUCT_BUNDLE_IDENTIFIER = DY.ButtonAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,13 +495,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QW4ZBW5U8P;
+				DEVELOPMENT_TEAM = KCN7L56XZJ;
 				INFOPLIST_FILE = codepathMoviesProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SMM.codepathMoviesProject;
+				PRODUCT_BUNDLE_IDENTIFIER = DY.ButtonAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
